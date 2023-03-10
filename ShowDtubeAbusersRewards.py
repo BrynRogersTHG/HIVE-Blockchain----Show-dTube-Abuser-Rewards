@@ -44,7 +44,6 @@ def getactivedtubeposts (account):
     c_list = {}
     post_counter = 0
     mypost = ""
-    bpost = False
 
     try:
         for post in map(Comment, account.history_reverse(stop=stop, only_ops=['comment'], use_block_num=False)):
