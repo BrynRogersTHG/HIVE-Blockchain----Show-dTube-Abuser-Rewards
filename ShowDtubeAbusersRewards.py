@@ -100,7 +100,6 @@ for abuser in abusers:
 
     for post in dtubepostsposts:
         outstandingposts += 1
-        #print(post.title)
         rewards = str(post.get_author_rewards()["payout_SP"])
         floatrewards = float(rewards[:5])
         outstandingrewards += floatrewards
